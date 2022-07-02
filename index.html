@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="src/style.css">
+    <script src="src/main.js"></script>
+    <title>Ingramm</title>
+</head>
+
+<body onload="init()">
+    <!-- NAVIGATION-BAR -->
+    <nav class="paddingNav">
+        <a class="cursor" href="#">
+            <img src="src/img/LogoMakr-0fUplr.png" alt="">
+        </a>
+        <input placeholder="Suchen" type="search" name="" id="search">
+        <div class="mainIcons">
+            <a class="cursor" href="#">
+                <img src="src/img/house-black-silhouette-without-door.png" alt="">
+            </a>
+            <a class="cursor" href="#">
+                <img src="src/img/senden.png" alt="">
+            </a>
+            <a class="cursor" href="#">
+                <img src="src/img/more.png" alt="">
+            </a>
+            <a class="cursor" href="#">
+                <img src="src/img/compass.png" alt="">
+            </a>
+            <a class="cursor" href="#">
+                <img src="src/img/heart.png" alt="">
+            </a>
+            <a class="cursor" href="#">
+                    <img class="userIcon" src="src/img/profil.jpg" alt="">
+            </a>
+        </div>
+    </nav>
+
+    <!-- CONTENT-SECTION -->
+    <section class="instaBgrd">
+        <div id="mainContainer" class="mainContainerStyling">
+            <div class="followerMarginContainer">
+                <div onclick="switchFollowerToRight()" class="arrowLeft cursor"><img src="src/img/arrow.png" alt=""></div>
+                <div onclick="switchFollowerToLeft()" class="arrowRight cursor"><img src="src/img/arrow.png" alt=""></div>
+                <div id="followContainer" class="friendsContainer">
+                    
+                </div>
+            </div>
+
+            <div id="userContainer">
+                
+            </div>
+        </div>
+
+        <div class="personalContainer">
+            <div class="accountContainer">
+                <div class="userInfoContainer">
+                    <img class="cursor" src="src/img/profil.jpg" alt="">
+                    <div class="accountName">
+                        <span class="cursor">ishakfeuer</span>
+                        <span class="middleFont">Ishak Feuer</span>
+                    </div>
+                </div>
+                <a class="cursor">Wechseln</a>
+            </div>
+            <div>
+                <div class="suggestionsHeadline">
+                    <span style="font-size: 16px; color: #838383;">Vorschläge für dich</span>
+                    <a class="cursor" style="color: #2A2A2A;">Alle ansehen</a>
+                </div>
+                
+                <!-- FREUNDSCHAFTS-VORSCHLÄGE / FRIENDSHIP-SUGGESTIONS -->
+                <div id="friendshipContainer" class="suggestionsContainer">
+                </div>
+            </div>
+
+        </div>
+        
+
+    </section>
+
+    
+</body>
+</html>
