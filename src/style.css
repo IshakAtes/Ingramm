@@ -460,4 +460,28 @@ nav > a > img {
     #search {
         display: none;
     }
+
+    .followerMarginContainer {
+        max-width: 100%;
+    }
+
+    .paddingNav {
+        padding: 0px 4px 0px 4px;
+    }
+}
+
+
+@media only screen and (max-width: 440px) {
+    .mainIcons a {
+        padding-left: 8px;
+    }
+
+    .mainIcons {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .mainIcons {
+        min-width: unset;
+    }
 }
